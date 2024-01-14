@@ -1,4 +1,4 @@
-let heroes = [['asd','sad']];
+let heroes = [];
 
 let heroContainer = document.getElementById('containerHero');
 
@@ -45,26 +45,9 @@ function addHero() {
 
 document.getElementById('addHero').addEventListener('click',addHero)
 
-
-
-let remBtn = document.getElementById('remove_btn');
-
-
-function deleteHero(){
-    remBtn.onclick = heroContainer.lastChild.remove();
-}
-deleteHero();
-
-
-let button = document.createElement("button");
-button.innerHTML = "Удалить последний элемент";
-document.body.appendChild(button);
-
-// Определяем массив
-let cardHeroesRem = document.getElementById('container_card');
-
-// Функция для удаления последнего элемента массива
-button.onclick = function() {
-  cardHeroesRem.pop();
-  console.log("Массив после удаления последнего элемента: ", cardHeroesRem);
-}
+function deleteHero() {
+    heroes.pop(); // Удаляет последнего героя из массива
+    console.dir(heroes); // Выводит массив героев после удаления
+    return
+  }
+document.getElementById('remove_btn').addEventListener('click', deleteHero)

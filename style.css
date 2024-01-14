@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&family=Salsa&display=swap');
+
 body {
     background-color: grey;
 }
@@ -14,12 +16,20 @@ body {
   text-align: center;
   color: rgb(0, 0, 0);
   font-size: 50px;
+  font-family: 'Pixelify Sans', sans-serif;
+}
+
+.sub_title {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-family: 'Pixelify Sans';
 }
 
 .containerHero {
   width: 500px;
   height: 200px;
-  border: 1px solid black;
+  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -32,10 +42,11 @@ body {
   width: 150px;
   height: 50px;
   border-radius: 30px;
-  border: 1px dashed purple;
+  border: none;
   background-color: rgb(219, 219, 219);
   font-size: 20px;
   color: red;
+  font-family: 'Salsa', cursive;
 }
 
 .photo {
@@ -53,12 +64,26 @@ body {
     align-items: center;
 }
 
-.remove {
+
+
+.rem_btn {
   width: 150px;
   height: 50px;
   border-radius: 30px;
-  border: 1px dashed red;
+  border: none;
   background-color: rgb(219, 219, 219);
   font-size: 20px;
   color: purple;
+  font-family: 'Salsa', cursive;
 }
+
+.rem_btn:hover {
+  background-color: rgb(177, 177, 177);
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.container {
+  padding-top: 60px;
+}
+
